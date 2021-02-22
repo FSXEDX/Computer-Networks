@@ -6,7 +6,8 @@ import java.net.NetworkInterface;
 import java.util.Enumeration;
 import java.util.List;
 
-public class NetworkInterface{
+public class NetworkInterfaceCheck{
+    
     public static void main(String [] args){
         try{
             InetAddress address = InetAddress.getByName("192.168.178.35");

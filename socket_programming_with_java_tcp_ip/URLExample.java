@@ -18,12 +18,13 @@ public class URLExample
         URLConnection myURL = url.openConnection();
         BufferedReader in = new BufferedReader(new InputStreamReader(myURL.getInputStream()));
         String inputLine;
-        String pattern = "<span id=\"yfs_l84_orcl\">(.+?)</span>";
+        
+        String pattern = "<span class=\"Trsdu(0.3s) Fw(b) Fz(36px) Mb(-4px) D(ib)\" data-reactid=\"32\">61.13</span>";
         Pattern r = Pattern.compile(pattern);
         while ((inputLine = in.readLine()) != null) 
         {
             //System.out.println(inputLine);
-            if(inputLine.contains("yfs_l84_orcl"))
+            if(inputLine.contains("Trsdu(0.3s) Fw(b) Fz(36px) Mb(-4px) D(ib)"))
             {
                 Matcher m = r.matcher(inputLine);
                 if (m.find( )) {
